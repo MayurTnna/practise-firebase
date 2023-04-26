@@ -2,6 +2,7 @@ import "./App.css";
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import { app } from "./firebase";
 import Signup from "./pages/Signup";
+import Signin from "./pages/Signin";
 
 const auth = getAuth(app);
 function App() {
@@ -15,6 +16,7 @@ function App() {
       {/* <h1>Hello</h1>
       <button onClick={signupUser}>create user</button> */}
       <Signup/>
+      <Signin/>
     </div>
   );
 }
